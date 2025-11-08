@@ -1,0 +1,23 @@
+.datepicker-modal {
+    max-height: 430px !important;
+}
+
+.datepicker-modal .datepicker-date-display {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* Add any additional styling here */
+.input-field {
+    margin-bottom: 20px;
+}
+
+.btn.blue {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: all 0.3s ease;
+}
+
+.btn.blue:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
