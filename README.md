@@ -63,4 +63,125 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 =======
 # Presence
 Presence is a modern web-based attendance system built with Laravel, TailwindCSS, and MySQL. It provides real-time presence tracking, secure authentication, and visual dashboards — making attendance management simple, smart, and efficient.
->>>>>>> 959164016862e2fe40b26782ba78286fa23a4f61
+
+# 🕒 Presence — Web-Based Attendance Management System
+
+**Presence** is a modern web-based attendance and leave management system built using **Laravel Blade**, designed to simplify employee presence tracking with a clean interface and efficient workflow.
+
+---
+
+## 🚀 Features
+
+### 👨‍💼 Employee & Admin Management
+- Role-based access (Admin / Employee)
+- Secure authentication using Laravel’s built-in Auth
+- Separate dashboards for administrators and staff
+
+### 🕒 Attendance Management
+- Clock-in and clock-out system with real-time tracking  
+- Daily attendance summary for each user  
+- Attendance history stored securely in database  
+- Support for presence validation (e.g., location/time rules)
+
+### 📝 Leave Request (Izin)
+- Employees can submit leave or permission forms directly  
+- Admin approval and review system  
+- Automatic updates on dashboard and history view
+
+### 📊 Dashboard & Analytics
+- Clean visual dashboard using **Blade + Chart.js**
+- Display total attendance, absence, and leave records
+- Real-time data visualization powered by Laravel Eloquent
+
+### 💾 Data Storage & Security
+- Database powered by **MySQL**
+- CSRF, XSS, and session protection via Laravel security features
+- Centralized data model for employees, presence logs, and permissions
+
+---
+
+## 🧩 Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| **Framework** | Laravel 10 (Blade Template Engine) |
+| **Frontend** | TailwindCSS, JavaScript (with optional Alpine.js) |
+| **Database** | MySQL |
+| **Charts & UI** | Chart.js, Custom CSS |
+| **Server** | Nginx / Apache |
+
+---
+
+## ⚙️ Installation Guide
+
+1. Clone Repository
+git clone https://github.com/Shinee33/Presence.git
+cd Presence
+
+2. Install Dependencies
+- composer install
+- npm install
+- npm run dev
+
+3.Setup Environment
+- cp .env.example .env
+php artisan key:generate
+
+4. Configure Database
+- DB_DATABASE=presence
+- DB_USERNAME=root
+- DB_PASSWORD=
+  
+5. Run Migration
+- php artisan migrate
+
+6. Serve the Project
+- php artisan serve
+
+Presence/
+├── app/Http/Controllers
+├── app/Models
+├── resources/views
+│   ├── auth/
+│   ├── dashboard/
+│   ├── layouts/
+│   └── presensi/
+├── routes/web.php
+└── public/assets/
+
+🔒 Authentication System
+
+Presence uses Laravel's built-in authentication with two roles:
+
+Admin: full access to dashboard, employees, and leave approvals
+
+Employee: can check-in/out, view attendance, and submit leave requests
+
+🌐 Deployment Notes
+
+For production:
+
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+
+
+Recommended environment:
+
+Ubuntu/Debian server
+
+PHP 8.2+
+
+MySQL 8+
+
+Nginx or Apache
+
+📄 License
+
+Open-source under MIT License
+
+✨ Credits
+
+Developed by Shinee33
+
+Built with ❤️ using Laravel Blade
