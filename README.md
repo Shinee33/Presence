@@ -123,8 +123,8 @@ cd Presence
 - npm install
 - npm run dev
 
-3.Setup Environment
-- cp .env.example .env
+3. Setup Environment
+cp .env.example .env
 php artisan key:generate
 
 4. Configure Database
@@ -133,10 +133,10 @@ php artisan key:generate
 - DB_PASSWORD=
   
 5. Run Migration
-- php artisan migrate
+php artisan migrate
 
-6. Serve the Project
-- php artisan serve
+7. Serve the Project
+php artisan serve
 
 Presence/
 ├── app/Http/Controllers
